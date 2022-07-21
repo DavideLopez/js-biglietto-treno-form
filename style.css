@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+ background-color: red;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    font: 1em sans-serif;
+    font-weight: bold;
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: red;
+}
+
+p{
+    padding-bottom: 1rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.col{
+    padding: 5rem;
+}
+
+/* a{
+    color: red;
+    background-color: grey;
+    border: 1px solid red;
+    padding: 10px;
+} */
