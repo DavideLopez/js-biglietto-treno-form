@@ -4,51 +4,30 @@
     box-sizing: border-box;
 }
 
-/* body{
+body{
     background-color: red;
 }
 
 .title{
     text-align: center;
-    color: white;
     padding: 3rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: white;
 }
 
-.container{
+.container {
+    max-width: 700px;
+    margin: auto;
     display: flex;
-    text-align: center;
-    font: 1em sans-serif;
-    font-weight: bold;
+    justify-content: space-between;
     background-color: white;
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 3rem;
     border-radius: 10px;
-    color: red;
 }
 
-p{
-    padding-bottom: 1rem;
-}
-
-.row{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.col{
-    padding: 5rem;
-}
-
-input{
+input, select, button{
     border: 1px solid red;
     border-radius: 5px;
-} */
+} 
 
-/* a{
-    color: red;
-    background-color: grey;
-    border: 1px solid red;
-    padding: 10px;
-} */
+
