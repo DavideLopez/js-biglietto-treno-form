@@ -45,11 +45,32 @@ submitElement.addEventListener('click', function () {
 
   if ( eta === '2' ) {
     console.log('utente maggiorenne')
-    sconto = 0
+    // sconto = 0
   }
 
  if ( eta === '3' ) {
     console.log('utente over65')
     sconto = basePrice * SCONTO_PERCENTUALE_ANZIANI
   }
+
+  console.log(sconto)
+
+  //calcolare il prezzo scontato
+  const prezzoScontato = basePrice - sconto
+  //stampare il biglietto
+  domElement = document.getElementById('print-area')
+  
+  domContent = `<tr>
+  <td>${name}</td>
+  <td>${basePrice.toFixed(2)} &euro;</td>
+  <td>${sconto.toFixed(2)}&euro;</td>
+  <td>${prezzoScontato.toFixed(2)}&euro;</td>
+  </tr>
+  `
+  //inserire il contenuto innerHTML nel domElement
+  domElement.innerHTML = domContent
 })
+
+//recuperare l'elemento del button cancella
+const resetElement = document.querySelector('button')
+// agganciare un event listener che prende il click
