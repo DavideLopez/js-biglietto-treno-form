@@ -12,36 +12,34 @@
 <body>
 
     <main>
-        <section class="top">
-            <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p>Nome e cognome</p>
-                        <input type="text">
-                    </div>
 
-                    <div class="col">
-                        <p>KM da percorrere</p>
-                        <input type="text">
-                    </div>
+        <div>
+            <input type="text" name="name" placeholder="nome">
+            <input type="number" name="distance" value="0" min="0">
+            <select name="eta">
+                <option value="1">Minorenne</option>
+                <option value="2" selected>Maggiorenne</option>
+                <option value="3">Over65</option>
+            </select>
+            <input type="submit" value="Calcola">
+            <button type="button">Cancella</button>
+        </div>
 
-                    <div class="col">
-                        <p>Età</p>
-                        <input type="text">
-                    </div>
 
-                    <!-- <a href="#">Genera</a>
-                    <a href="#">Annulla</a> -->
 
-                </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>KM</th>
+                    <th>Prezzo base</th>
+                    <th>Sconto</th>
+                    <th>Prezzo Finale</th>
+                </tr>
+            </thead>
+            <tbody id="print-area">
 
-            </div>
-        </section>
-
-        <section class="bottom">
-
-        </section>
+            </tbody>
+        </table>
 
 
     </main>
@@ -49,6 +47,7 @@
 
 
     <script type="text/javascript" src="app.js"></script>
+
 </body>
 
 </html>
