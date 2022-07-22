@@ -72,7 +72,7 @@ submitElement.addEventListener('click', function () {
 })
 
 //recuperare l'elemento del button cancella
-const resetElement = document.querySelector('button[type="button]')
+const resetElement = document.querySelector('button[type="button"]')
 console.log(resetElement)
 // agganciare un event listener che prende il click
 resetElement.addEventListener('click', function () {
